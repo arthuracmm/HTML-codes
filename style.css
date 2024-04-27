@@ -1,12 +1,17 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
 }
 
 :root {
     --primary-color: #2b2b2b;
     --secondary-color: #393939;
     --tertiary-color: #909090;
+}
+
+a{
+    color: white;
 }
 
 body{
@@ -28,27 +33,49 @@ body{
     overflow: hidden;
 }
 
+.sidenav-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.sidenav-top i{
+    font-size: 2rem;
+}
+
 .sidenav h2{
     margin-bottom: 5px;
-    margin-top: 10px;
 }
 
 .sidenav a{
     text-decoration: none;
     color: white;
-    margin-top: 10px;
     width: 100%;
     display: flex;
     box-sizing: border-box;
     padding: 20px;
     justify-content: center;
+    transition: 200ms ease-in-out;
 }
-
 
 .sidenav a:hover{
     background-color: var(--secondary-color);
 }
 
+.sidenav-top li{
+    list-style: none;
+    transition: 200ms ease-in-out;
+}
+
+.sidenav-top li:hover{
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+    transition: 200ms ease-in-out;
+    cursor: pointer;
+}
 
 header {
     width: 100%;
