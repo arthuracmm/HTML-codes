@@ -3,9 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/img/icon.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Fatecode - Circuito HTML</title>
 </head>
 <body>
-    
+
+    <script>
+        function showSidenav(){
+            const sidenav = document.querySelector('.sidenav')
+            sidenav.style.display = 'flex'
+        }
+
+        function hideSidenav(){
+            const sidenav = document.querySelector('.sidenav')
+            sidenav.style.display = 'none'
+        }
+    </script>
+
+    <div class="sidenav">
+        <div class="top">
+            <h2>Menu</h2>
+             <a onclick=hideSidenav() href="#"><i class="material-icons">close</i></a>
+        </div>
+        
+        <a href="pages/pagina1.html" target="content">Página 1</a>
+        <a href="pages/pagina1.html" target="content">Página 2</a>
+        <a href="pages/pagina1.html" target="content">Página 3</a>
+        <a href="pages/pagina1.html" target="content">Página 4</a>
+        <a href="pages/pagina1.html" target="content">Página 5</a>
+      </div>
+
+    <header>
+        <div class="header-content">
+
+            <div class="header-items">
+                <img src="./assets/img/logo.png" alt="">
+            </div>
+            <div class="header-items">
+                <a onclick=showSidenav() href="#"><i class="material-icons">dehaze</i></a>
+            </div>
+
+        </div>
+    </header>
 </body>
 </html>
