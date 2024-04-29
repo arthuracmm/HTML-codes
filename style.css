@@ -2,16 +2,13 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    color: white;
 }
 
 :root {
     --primary-color: #2b2b2b;
     --secondary-color: #393939;
     --tertiary-color: #909090;
-}
-
-a{
-    color: white;
 }
 
 body{
@@ -21,16 +18,17 @@ body{
 .sidenav{
     display: none;
     position: absolute;
-    right: 10px;
-    top: 10px;
+    right: 0px;
+    top: 0px;
     color: white;
     font-family: sans-serif;
     flex-direction: column;
-    width: 200px;
+    height: 100%;
+    width: 30%;
     align-items: center;
-    border-radius: 20px;
     background-color: var(--tertiary-color);
     overflow: hidden;
+    animation: show 300ms linear;
 }
 
 .sidenav-top{
@@ -58,7 +56,6 @@ body{
     box-sizing: border-box;
     padding: 20px;
     justify-content: center;
-    transition: 200ms ease-in-out;
 }
 
 .sidenav a:hover{
@@ -75,6 +72,26 @@ body{
     color: var(--secondary-color);
     transition: 200ms ease-in-out;
     cursor: pointer;
+}
+
+@keyframes show{
+    0%{
+        width: 0;
+    }
+
+    100%{
+        width: 30%;
+    }
+}
+
+@keyframes showtwo{
+    0%{
+        width: 100%;
+    }
+
+    100%{
+        width: 70%;
+    }
 }
 
 header {
@@ -108,4 +125,56 @@ header {
 
 .header-items i {
     font-size: 4rem;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.content h1{
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 2rem;
+}
+
+.content h2{
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 30px;
+}
+
+.content p {
+    margin-top: 1rem;
+    font-size: 20px;
+}
+
+.code pre{
+    margin: 1rem auto;
+    background: var(--secondary-color);
+    width: 80%;
+    border-radius: 20px;
+}
+
+.code pre::before{
+    content: 'HTML';
+    background-color: #252525;
+    display: flex;
+    padding: 5px;
+    padding-left: 25px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.code pre code{
+    font-family: sans-serif;
+}
+
+.green-code{
+    color: #00d061;
+}
+
+.orange-code{
+    color: #ff97a0;
 }
