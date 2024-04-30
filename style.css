@@ -60,10 +60,13 @@ hr{
     box-sizing: border-box;
     padding: 20px;
     justify-content: center;
+    transition: 300ms ease-in-out;
 }
 
 .sidenav a:hover{
+    font-size: 19px;
     background-color: var(--secondary-color);
+    transition: 300ms ease-in-out;
 }
 
 .sidenav-top li{
