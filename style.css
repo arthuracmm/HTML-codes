@@ -28,7 +28,7 @@ body{
     align-items: center;
     background-color: var(--tertiary-color);
     overflow: hidden;
-    animation: show 300ms linear;
+    animation: show 300ms;
 }
 
 .sidenav-top{
@@ -70,7 +70,6 @@ body{
 .sidenav-top li:hover{
     background-color: var(--tertiary-color);
     color: var(--secondary-color);
-    transition: 200ms ease-in-out;
     cursor: pointer;
 }
 
@@ -81,16 +80,6 @@ body{
 
     100%{
         width: 30%;
-    }
-}
-
-@keyframes showtwo{
-    0%{
-        width: 100%;
-    }
-
-    100%{
-        width: 70%;
     }
 }
 
@@ -147,14 +136,16 @@ header {
 }
 
 .content p {
-    margin-top: 1rem;
+    margin: 1rem auto;
     font-size: 20px;
+    width: 80%;
+    text-align: center;
 }
 
 .code pre{
     margin: 1rem auto;
     background: var(--secondary-color);
-    width: 80%;
+    width: 700px;
     border-radius: 20px;
 }
 
@@ -165,10 +156,37 @@ header {
     padding: 5px;
     padding-left: 25px;
     border-radius: 20px 20px 0px 0px;
+    margin-bottom: 10px;
 }
 
-.code pre code{
-    font-family: sans-serif;
+.res {
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    width: 700px;
+    margin: 0 auto;
+    background: var(--secondary-color);
+    margin-top: 2rem;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.restxt{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 100;
+    background: #252525;
+    border-radius: 20px 20px 0px 0px;
+    padding: 10px;
+}
+
+.res-code{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 5rem;
+    text-align: center;
+    width: 100%;
 }
 
 .green-code{

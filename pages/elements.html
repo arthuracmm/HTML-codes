@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="content">
+        <h1>HTML Elements</h1>
+
+            <hr>
+
+            <h2>Quais são os principais elementos do HTML?</h2>
+
+            <p>Agora que você já sabe o que é o HTML, vamos ver os principais marcadores que definem a função dos elementos que fazem parte da página.</p>
+            <p>Mas antes precisamos lembrar que essas tags são identificadas com um sinal de menor que (<), seguido pelo nome da tag e um sinal de maior que (>). A maior parte das tags precisa ser fechada, o que representamos com uma barra (/) entre o sinal “<“ e o nome da tag.</p>
+            <p>Tudo ficará mais claro com os exemplos a seguir.</p>
+
+            <h2>Parágrafo(&lt;p&gt)</h2>
+            <p>A tag &lt;p&gt deve ser aberta e fechada para definir um parágrafo</p>
+
+            <div class="code">
+                <div class="code">
+                    <pre>
+                        <code>
+                            &lt;<span class="green-code">p</span>&gt;Este é um Parágrafo em HTML.&lt;/<span class="green-code">p</span>&gt;
+                        </code>
+                    </pre>
+                </div>
+            </div>
+
+            <div class="res">
+                <h3 class="restxt">Resultado</h3>
+                <div class="res-code">
+                    <p>Este é um parágrafo em HTML.</p>
+                </div>
+            </div>
+
+            <hr>
+
+            <h2>Cabeçalho(&lt;h1&gt, &lt;h2&gt, &lt;h3&gt, &lt;h4&gt, &lt;h5&gt, &lt;h6&gt)</h2>
+            <p>As heading tags, ou tags de cabeçalho, ajudam a criar uma hierarquia entre as partes do texto, separando-o em seções. O &lt;h1&gt é o cabeçalho de maior relevância, seguido pelo &lt;h2&gt, &lt;h3&gt e assim sucessivamente até o &lt;h6&gt, de menor importância.</p>
+
+            <div class="code">
+                <div class="code">
+                    <pre>
+                        <code>
+                            &lt;<span class="green-code">h1</span>&gt;Título principal&lt;/<span class="green-code">h1</span>&gt;
+                            &lt;<span class="green-code">p</span>&gt;Parágrafo de introdução.&lt;/<span class="green-code">p</span>&gt;
+
+                            &lt;<span class="green-code">h2</span>&gt;1. Primeiro intertítulo&lt;/<span class="green-code">h2</span>&gt;
+                            &lt;<span class="green-code">p</span>&gt;Parágrafo da primeira seção.&lt;/<span class="green-code">p</span>&gt;
+
+                            &lt;<span class="green-code">h2</span>&gt;2. Segundo intertítulo&lt;/<span class="green-code">h2</span>&gt;
+                            &lt;<span class="green-code">p</span>&gt;Parágrafo da primeira seção.&lt;/<span class="green-code">p</span>&gt;
+                            &lt;<span class="green-code">p</span>&gt;Mais um parágrafo da segunda seção.&lt;/<span class="green-code">p</span>&gt;
+
+                            &lt;<span class="green-code">h2</span>&gt;3. Terceiro intertítulo&lt;/<span class="green-code">h2</span>&gt;
+                            &lt;<span class="green-code">p</span>&gt;Parágrafo da terceira seção.&lt;/<span class="green-code">p</span>&gt;
+
+                            &lt;<span class="green-code">h3</span>&gt;3.1. Intertítulo dentro da terceira seção&lt;/<span class="green-code">h3</span>&gt;
+                            &lt;<span class="green-code">p</span>&gt;Parágrafo da seção 3.1.&lt;/<span class="green-code">p</span>&gt;
+
+                            &lt;<span class="green-code">h3</span>&gt;3.2. Mais um intertítulo dentro da terceira seção&lt;/<span class="green-code">h3</span>&gt;
+                            &lt;<span class="green-code">p</span>&gt;Parágrafo da seção 3.2.&lt;/<span class="green-code">p</span>&gt;
+                        </code>
+                    </pre>
+                </div>
+            </div>
+
+            <div class="res">
+                <h3 class="restxt">Resultado</h3>
+                <div class="res-code">
+                    <h1>Título principal</h1>
+                        <p>Parágrafo de introdução.</p>
+                    <h2>1. Primeiro intertítulo</h2>
+                        <p>Parágrafo da primeira seção.</p>
+                        <p>Mais um parágrafo da primeira seção.</p>
+                    <h2>2. Segundo intertítulo</h2>
+                        <p>Parágrafo da segunda seção.</p>
+                        <p>Mais um parágrafo da segunda seção.</p>
+                    <h2>3. Terceiro intertítulo</h2>
+                        <p>Parágrafo da terceira seção.</p>
+                    <h3>3.1. Intertítulo dentro da terceira seção</h3>
+                        <p>Parágrafo da seção 3.1.</p>
+                    <h3>3.2. Mais um intertítulo dentro da terceira seção</h3>
+                </div>
+            </div>
+
+            <hr>
+
+            <h2>Como criar o seu primeiro código em HTML?</h2>
+            <p>Para criar um código HTML, você só precisa de um <b>editor</b> de texto simples (o Bloco de Notas, por exemplo) e de um navegador web (Chrome, Opera, Firefox, Safari, etc.) para visualizar como vai ficar a sua página. Desenvolvedores profissionais usam <b>editores de código</b> mais especializados, mas podemos seguir inicialmente com um editor simples.</p>
+            <p>O primeiro passo é criar um novo arquivo e salvá-lo com a extensão .html. Para este tutorial, podemos dar o nome de index.html.</p>
+            <p>Depois, cole o código que mostramos na seção anterior com a estrutura básica de um HTML e salve o arquivo.</p>
+
+            <div class="code">
+                <div class="code">
+                    <pre>
+                        <code>
+                            &lt;!DOCTYPE html&gt;
+                            &lt;<span class="green-code">html</span>&gt;
+
+                                    &lt;<span class="green-code">head</span>&gt;
+
+                                            &lt;<span class="green-code">meta charset</span> = <span class="orange-code">"utf-8"</span>&gt;
+                                            &lt;<span class="green-code">title</span>&gt Minha primeira página &lt;/<span class="green-code">title</span>&gt;
+                                    
+                                    &lt;/<span class="green-code">head</span>&gt;
+
+                                    &lt;<span class="green-code">body</span>&gt;
+
+                                            &lt;<span class="green-code">h1</span>&gt; Minha primeira página&lt;/<span class="green-code">h1</span>&gt;
+                                            &lt;<span class="green-code">p</span>&gt Meu primeiro parágrafo! &lt;/<span class="green-code">p</span>&gt;
+                                    
+                                    &lt;/<span class="green-code">body</span>&gt;
+
+                            &lt;/<span class="green-code">html</span>&gt;
+                        </code>
+                    </pre>
+                </div>
+            </div>
+
+            <p>Agora é só abrir o arquivo no seu browser preferido e pronto, você acabou de criar o seu primeiro código HTML!</p>
+
+        </div>
+
+        
+
+</body>
+</html>
