@@ -8,35 +8,141 @@
 </head>
 <body>
     <div class="content">
-        <h1>HTML Elements</h1>
+        <h1>HTML Attributes</h1>
 
             <hr>
 
-            <h2>Quais são os principais elementos do HTML?</h2>
+            <h2>O que são atributos HTML?</h2>
 
-            <p>Agora que você já sabe o que é o HTML, vamos ver os principais marcadores que definem a função dos elementos que fazem parte da página.</p>
-            <p>Mas antes precisamos lembrar que essas tags são identificadas com um sinal de menor que (<), seguido pelo nome da tag e um sinal de maior que (>). A maior parte das tags precisa ser fechada, o que representamos com uma barra (/) entre o sinal “<“ e o nome da tag.</p>
-            <p>Tudo ficará mais claro com os exemplos a seguir.</p>
+            <p>AAtributos HTML (em inglês html attributes") são palavras especiais usadas dentro da tag de abertura para controlar o comportamento do elemento.</p>
+            <p>Os atributos HTML são um modificador de um tipo de elemento HTML. Com eles, podemos identificar melhor um elemento, informar qual arquivo aquela tag deve utilizar, indicar o tipo de um campo de texto, etc.</p>
+            <p>Há dois tipos de atributos no <b>HTML</b>, os globais, aceitos por todas as tags, como, por exemplo: class, id, lang, style e algumas outras que você pode conferir na <b>documentação</b>; e também existem os específicos, que somente algumas tags possuem, como: src, disabled, href, label, etc.</p>
 
-            <h2>Parágrafo(&lt;p&gt)</h2>
-            <p>A tag &lt;p&gt deve ser aberta e fechada para definir um parágrafo</p>
 
+            <h2>Estrutura de um atributo</h2>
             <div class="code">
                 <div class="code">
                     <pre>
                         <code>
-                            &lt;<span class="green-code">p</span>&gt;Este é um Parágrafo em HTML.&lt;/<span class="green-code">p</span>&gt;
+                            &lt;<span class="green-code">p</span>&gt;<span class="orange-code"> nome</span>=”valor” &lt;/<span class="green-code">p</span>&gt;
                         </code>
                     </pre>
                 </div>
             </div>
 
-            <div class="res">
-                <h3>Resultado</h3>
-                <div class="res-code">
-                    <p>Este é um parágrafo em HTML.</p>
+            <div class="code">
+                <div class="code">
+                    <pre>
+                        <code>
+                            &lt;<span class="green-code">p</span> <span class="orange-code">class</span> = <span class="green-code">"intro"</span>&gt;Este é um Parágrafo com Atributo.&lt;/<span class="green-code">p</span>&gt;
+                        </code>
+                    </pre>
                 </div>
             </div>
-    </div>
+
+            <hr>
+
+            <h2>Quais são os principais atributos HTML?</h2>
+            <p>São os principais atributos:</p>
+
+            <h2>class=”NomeDaClasse”</h2>
+
+            <p>Classes são como classificações de uma tag/elemento, para estilizar uma tag específica, ou um conjunto de tags no CSS.</p>
+            <p>Também é possível usar no JavaScript para selecionar uma tag específica. Veja alguns exemplos.</p>
+
+            <div class="code">
+                <div class="code">
+                    <pre>
+                        <code>
+                            &lt;<span class="green-code">h1</span> <span class="orange-code">class</span> = <span class="green-code">"titulo"</span>&gt; Mergulhe na Tecnologia &lt;/<span class="green-code">h1</span>&gt;
+                        </code>
+                    </pre>
+                </div>
+            </div>
+
+            <hr>
+
+            <h2>id=”NomeDoId”</h2>
+
+            <p>É utilizado para identificar de forma única um elemento naquela página HTML, como o destino de âncoras, labels e outras funcionalidades neste sentido.</p>
+
+            <div class="code">
+                <div class="code">
+                    <pre>
+                        <code>
+                            &lt;<span class="green-code">h1</span> <span class="orange-code">id</span> = <span class="green-code">"titulo"</span>&gt; Mergulhe na Tecnologia &lt;/<span class="green-code">h1</span>&gt;
+                        </code>
+                    </pre>
+                </div>
+            </div>
+
+            <hr>
+
+            <h2>src=”Link ou diretório da mídia"</h2>
+
+            <p>Comumente utilizado para indicar para a tag qual arquivo ou mídia utilizar. Recebe valores como links <a href="#">https://google.com/minhaimagem.jpeg</a> ou o nome de um arquivo já presente no projeto (/minhaimagem.jpeg).</p>
+
+            <div class="code">
+                <div class="code">
+                    <pre>
+                        <code>
+                            &lt;<span class="green-code">img</span> <span class="orange-code">src</span> = <span class="green-code">"./src/img/logofatecode"</span>&gt;
+                        </code>
+                    </pre>
+                </div>
+            </div>
+
+            <hr>
+
+            <h2>alt=”Texto alternativo”</h2>
+
+            <p>O atributo alt fornece informações alternativas para uma imagem se um usuário ou usuária, por algum motivo, não puder visualizá-la (devido à conexão lenta, um erro no atributo src ou a utilização de um leitor de tela).</p>
+
+            <div class="code">
+                <div class="code">
+                    <pre>
+                        <code>
+                            &lt;<span class="green-code">img</span> <span class="orange-code">src</span> = <span class="green-code">"./src/img/logofatecode"</span></span> <span class="orange-code">alt</span> = <span class="green-code">"Logo FATECODE"</span>&gt;
+                        </code>
+                    </pre>
+                </div>
+            </div>
+
+            <hr>
+
+            <h2>href=”Url”</h2>
+
+            <p>O atributo alt fornece informações alternativas para uma imagem se um usuário ou usuária, por algum motivo, não puder visualizá-la (devido à conexão lenta, um erro no atributo src ou a utilização de um leitor de tela).</p>
+
+            <div class="code">
+                <pre>
+                    <code>
+                        &lt;<span class="green-code">p</span>&gt; Clique </span>
+                        &lt;<span class="green-code">a</span> <span class="orange-code">href</span> = <span class="green-code">"https://www.fatecode.com.br/"</span> aqui &lt;/<span class="green-code">a</span>&gt;
+                        para ir ao site da Fatecode &lt;/<span class="green-code">p</span>&gt;
+                    </code>
+                </pre>
+            </div>
+
+            <hr>
+
+            <h2>target=”blank”</h2>
+
+            <p>Esse atributo abre o link do documento em uma nova janela ou aba.</p>
+
+            <div class="code">
+                <pre>
+                    <code>
+                        &lt<span class="green-code">p</span>&gt Clique </span>
+                        &lt<span class="green-code">a</span> <span class="orange-code">href</span> = <span class="green-code">"https[...]"</span> <span class="orange-code">target</span> = <span class="green-code">"blank"</span>&gtaqui &lt/<span class="green-code">a</span>&gt
+                        para ir ao site da Fatecode &lt;/<span class="green-code">p</span>&gt
+                    </code>
+                </pre>
+            </div>
+
+        </div>
+
+        
+
 </body>
 </html>
