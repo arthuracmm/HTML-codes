@@ -19,6 +19,10 @@ hr{
     margin: 10px;
 }
 
+mark{
+    background-color: #00d061;
+}
+
 .sidenav{
     display: none;
     position: absolute;
