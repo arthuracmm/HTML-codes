@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="content">
+        <h1>HTML Javascript</h1>
+
+            <hr>
+
+            <p>JavaScript torna as páginas HTML mais dinâmicas e interativas.</p>
+
+    <hr>
+
+    <h2>The HTML <<span class="orange-code">script</span>> Tag</h2>
+    <p>A tag HTML <<span class="orange-code">script</span>> é usada para definir um script do lado do cliente (JavaScript).</p>
+    <p>O elemento <<span class="orange-code">script</span>> contém instruções de script ou aponta para um arquivo de script externo por meio do atributo <span class="orange-code">src</span>.</p>
+    <p>Os usos comuns do JavaScript são manipulação de imagens, validação de formulários e alterações dinâmicas de conteúdo.</p>
+    <p>Para selecionar um elemento HTML, o JavaScript geralmente usa o método <span class="orange-code">document.getElementById()</span>.</p>
+    <p>Este exemplo de JavaScript escreve "Hello JavaScript!"  em um elemento HTML com id="demo":</p>
+
+    <div class="code">
+        <div class="code">
+            <pre>
+                <code>
+                    <<span class="orange-code">html</span>>
+                    <<span class="orange-code">body</span>>
+
+                    <<span class="orange-code">p</span> <span class="green-code">id </span>= <span class="orange-code">demo</span>><<span class="orange-code">/p</span>>
+
+                    <<span class="orange-code">script</span>>
+                        document.getElementById(<span class="orange-code">"demo"</span></span>).innerHTML = <span class="orange-code">"Hello JavaScript"</span>
+                    <<span class="orange-code">/script</span>>
+
+                    <<span class="orange-code">/body</span>>
+                    <<span class="orange-code">/html</span>>
+                </code>
+            </pre>
+        </div>
+    </div>
+
+    <div class="res">
+        <h3 class="restxt">Resultado</h3>
+        <div class="res-code">
+            <p id="demo"></p>
+
+            <script>
+            document.getElementById("demo").innerHTML = "Hello JavaScript!";
+            </script> 
+
+        </div>
+    </div>
+    
+</body>
+</html>
