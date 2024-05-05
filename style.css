@@ -31,7 +31,7 @@ mark{
     color: white;
     font-family: sans-serif;
     flex-direction: column;
-    height: 100%;
+    height: 2000px;
     width: 30%;
     align-items: center;
     background-color: var(--tertiary-color);
