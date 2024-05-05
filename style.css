@@ -207,3 +207,28 @@ header {
 .orange-code{
     color: #ff97a0;
 }
+
+.table{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.table-title{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: var(--tertiary-color);
+}
+
+.table-content{
+    background-color: var(--secondary-color);
+    width: 100%;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
