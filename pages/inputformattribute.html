@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="content">
+        <h1>HTML Input Attributes</h1>
+
+            <hr>
+
+            <p>Este capítulo descreve os diferentes atributos form* para o elemento HTML.<<span class="orange-code">input</span>>.</p>
+
+            <hr>
+
+            <h2>O atributo form</h2>
+            <p>O atributo <span class="orange-code">input</span> value especifica um valor inicial para um campo de entrada:</p>
+
+        <div class="code">
+            <pre>
+                <code>
+                    <<span class="orange-code">form action</span>=<span class="green-code">"/action_page.php" </span><span class="orange-code">id</span>=<span class="green-code">"form1" </span>>
+                        <<span class="orange-code">label for</span>=<span class="green-code">"fname"</span>> Primeiro Nome <<span class="orange-code">/label</span>>
+                        <<span class="orange-code">input type</span>=<span class="green-code">"text"</span><span class="orange-code"> id</span>=<span class="green-code">"fname"</span><span class="orange-code"> name</span>=<span class="green-code">"flname"</span><span class="orange-code"> value</span>=<span class="green-code">"John"</span>><<span class="orange-code">br</span>><<span class="orange-code">br</span>>
+                        <<span class="orange-code">input type</span>=<span class="green-code">"submit"</span><span class="orange-code"> value</span>=<span class="green-code">"submit"</span>>
+
+                        <<span class="orange-code">label for</span>=<span class="green-code">"fname"</span>> Sobrenome <<span class="orange-code">/label</span>><<span class="orange-code">br</span>>
+                        <<span class="orange-code">input type</span>=<span class="green-code">"text"</span><span class="orange-code"> id</span>=<span class="green-code">"lname"</span><span class="orange-code"> name</span>=<span class="green-code">"lname"</span><span class="orange-code"> value</span>=<span class="green-code">"doe"</span>><<span class="orange-code">br</span>><<span class="orange-code">br</span>>
+
+                    <<span class="orange-code">/form</span>
+
+                    <<span class="orange-code">label for</span>=<span class="green-code">"lname"</span>> Sobrenome <<span class="orange-code">/label</span>>
+                        <<span class="orange-code">input type</span>=<span class="green-code">"text"</span><span class="orange-code"> id</span>=<span class="green-code">"fname"</span><span class="orange-code"> name</span>=<span class="green-code">"flname"</span><span class="orange-code"> value</span>=<span class="green-code">"John"</span>>
+
+                </code>
+            </pre>
+        </div>
+
+        <h2>O atributo Readonly</h2>
+        <p>O atributo input <span class="orange-code">readonly</span> especifica que um campo de entrada é somente leitura.</p>
+
+        <div class="code">
+            <pre>
+                <code>
+                    <<span class="orange-code">form</span>>
+                        <<span class="orange-code">label for</span>=<span class="green-code">"fname"</span>> Primeiro Nome <<span class="orange-code">/label</span>><<span class="orange-code">br</span>>
+                        <<span class="orange-code">input type</span>=<span class="green-code">"text"</span><span class="orange-code"> id</span>=<span class="green-code">"fname"</span><span class="orange-code"> name</span>=<span class="green-code">"flname"</span><span class="orange-code"> value</span>=<span class="green-code">"John"</span> <span class="orange-code">readonly</span>><<span class="orange-code">br</span>>
+
+                        <<span class="orange-code">label for</span>=<span class="green-code">"fname"</span>> Sobrenome <<span class="orange-code">/label</span>><<span class="orange-code">br</span>>
+                        <<span class="orange-code">input type</span>=<span class="green-code">"text"</span><span class="orange-code"> id</span>=<span class="green-code">"lname"</span><span class="orange-code"> name</span>=<span class="green-code">"lname"</span><span class="orange-code"> value</span>=<span class="green-code">"doe"</span>><<span class="orange-code">br</span>><<span class="orange-code">br</span>>
+
+                    <<span class="orange-code">/form</span>
+                </code>
+            </pre>
+        </div>
+
+        <h2>O atributo Disable</h2>
+        <p>O atributo input <span class="orange-code">disable</span> especifica que um campo de entrada deve ser desabilitado.</p>
+
+        <div class="code">
+            <pre>
+                <code>
+                    <<span class="orange-code">form</span>>
+                        <<span class="orange-code">label for</span>=<span class="green-code">"fname"</span>> Primeiro Nome <<span class="orange-code">/label</span>><<span class="orange-code">br</span>>
+                        <<span class="orange-code">input type</span>=<span class="green-code">"text"</span><span class="orange-code"> id</span>=<span class="green-code">"fname"</span><span class="orange-code"> name</span>=<span class="green-code">"flname"</span><span class="orange-code"> value</span>=<span class="green-code">"John"</span> <span class="orange-code">disable</span>><<span class="orange-code">br</span>>
+
+                        <<span class="orange-code">label for</span>=<span class="green-code">"fname"</span>> Sobrenome <<span class="orange-code">/label</span>><<span class="orange-code">br</span>>
+                        <<span class="orange-code">input type</span>=<span class="green-code">"text"</span><span class="orange-code"> id</span>=<span class="green-code">"lname"</span><span class="orange-code"> name</span>=<span class="green-code">"lname"</span><span class="orange-code"> value</span>=<span class="green-code">"doe"</span>><<span class="orange-code">br</span>><<span class="orange-code">br</span>>
+
+                    <<span class="orange-code">/form</span>
+                </code>
+            </pre>
+        </div>
+
+        <p>Veja a classificação de cada um</p>
+        <a href="https://www.w3schools.com/html/html_form_attributes_form.asp" style="text-align: center; font-size: 20px;">Clicando aqui!</a>
+    </div>
+    
+    
+</body>
+</html>
